@@ -1,0 +1,295 @@
+body {
+    font-family: 'Gotham Ultra', sans-serif;
+    background-image: linear-gradient(45deg, #E46353, #D4A351);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    min-width: 1600px;
+}
+
+.header {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 28px;
+}
+
+.header .header-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header .header-nav a {
+    cursor: pointer;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 28px;
+    transition: .2s ease-in-out;
+}
+
+.header .header-nav a:hover {
+    opacity: .8;
+}
+
+.content {
+    display: grid;
+}
+
+.content .image {
+    position: relative;
+    height: 100vh;
+}
+
+.content .image .character {
+    position: absolute;
+    width: 480px;
+    height: 719px;
+    bottom: 60px;
+    left: 170px;
+}
+
+.content .image .bg-character {
+    width: 294px;
+    position: absolute;
+    z-index: -1;
+    bottom: 510px;
+    left: 250px;
+}
+
+.content .image .vector {
+    width: 75px;
+    position: absolute;
+    bottom: 640px;
+    left: 480px;
+}
+
+.content .container-bubble {
+    position: absolute;
+    width: 312px;
+    bottom: 670px;
+    left: 490px;
+}
+
+.content .bubble {
+    background-color: #ffffff;
+    border-radius: 45px;
+    padding: 10px 25px;
+    width: 312px;
+    height: 120px;
+}
+
+.content .bubble p {
+    font-style: italic;
+}
+
+.content .bubble .greeting {
+    font-size: 24px;
+}
+
+.content .bubble .text {
+    display:none;
+}
+
+.content .bubble .text.selected {
+    font-size: 14px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5px auto 15px;
+    line-height: 130%;
+}
+
+.content .continue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.content .continue .text-continue {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 24px;
+    z-index: 2;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.content .continue .text-continue:hover {
+    opacity: .8;
+}
+
+.content .continue p {
+    font-size: 10px;
+}
+
+.content .btn-continue .a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+    cursor: pointer;
+    font-size: 24px;
+    transition: .2s ease-in-out;
+}
+
+.content .btn-continue .a:hover {
+    opacity: .8;
+}
+
+.content img{
+    width: 18px;
+}
+
+.form {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 700px;
+}
+
+.form .form-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form .title-about {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+}
+
+.form .inputs {
+    width: 567px;
+    height: 699px;
+    display: flex;
+    justify-content: center;
+}
+
+.form .inputs form {
+    background-color: #ffffff;
+    padding: 50px 35px;
+    border-radius: 50px;
+    margin-top: 5px;
+    width: 560px;
+    height: 665px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 8px 8px 8px;
+}
+
+.form .inputs .about-text {
+    background-color: #ffffff;
+    padding: 60px 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    line-height: 25px;
+    width: 560px;
+    height: 665px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 8px 8px 8px;
+}
+
+.form .inputs form label {
+    font-style: italic;
+    font-size: 24px;
+}
+.form .inputs form input {
+    background-color: #F5F5F5;
+    border-radius: 50px;
+    border: 2px solid;
+    width: 90%;
+    padding: 15px;
+}
+
+.form .inputs form textarea {
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 50px;
+    border: 2px solid;
+    width: 90%
+}
+
+.form .inputs .button-submit {
+    color: #000000;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.form .inputs .button-submit:hover {
+    opacity: .8;
+}
+
+/* IF DON'T FILL OUT THE FIELDS */
+
+.form .inputs .error {
+    border: 2px solid #F52E2E;
+}
+
+.form .inputs .fill-out {
+    color: #F52E2E;
+    font-size: 12px;
+    font-style: italic;
+}
+
+@media(max-height: 850px){
+    .content .image .character {
+        width: 385px;
+        height: 575px;
+    }
+
+    .content .image .bg-character {
+        width: 235px;
+        bottom: 430px;
+        left: 240px;
+    }
+
+    .content .image .vector {
+        width: 60px;
+        bottom: 510px;
+        left: 440px;
+    }
+
+    .content .container-bubble {
+        width: 250px;
+        bottom: 530px;
+        left: 440px;
+    }
+
+    .form {
+        margin-top: 3%;
+    }
+
+    .form .inputs form, .form .inputs .about-text {
+        width: 530px;
+        height: 540px;
+    }
+}

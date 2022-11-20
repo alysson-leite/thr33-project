@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THR33</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+
+    <link href="https://fonts.cdnfonts.com/css/gotham-ultra" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+                
+</head>
+<body>
+    <header class="header">
+        <div class="header-title">
+            <p>Version THR33</p>
+        </div>
+        <div class="header-nav">
+            <nav>
+                <ul>
+                     <li><a href="./index.html">Home</a></li>
+                     <li><a href="./about.html" id="about">About</a></li>
+                     <li><a id="connect">Connect</a></li>
+                </ul>
+           </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="image">
+            <img src="./src/images/character.png" alt="character" class="character">
+            <img src="./src/images/bg-character.png" alt="background" class="bg-character">
+            <img src="./src/images/vector.png" alt="vector" class="vector">
+            <div iv class="container-bubble">
+                <div class="bubble">
+                    <p class="greeting">
+                        Hello!
+                    </p>
+                    <div class="text selected">
+                        <p id="text">
+                            Welcome to Version Thr33.
+                        </p>
+                    </div>
+                    <div class="text">
+                        <p id="text">
+                            To your right you'll find the first interaction within the Version thr33 universe.
+                        </p>
+                    </div>
+                    <div class="text">
+                        <p id="text">
+                            Please take your time to understand what you are sigining up for and use heed when sending...
+                        </p>
+                    </div>
+                </div>
+                <div class="continue">
+                    <div class="btn-continue">
+                        <p class="text-continue" id="btn-continue">Continue
+                        <img src="./src/images/ellipse.png" alt="ellipse">
+                        </p>
+                    </div>
+                    <div>
+                        <p>Please press to continue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="form-title">
+                <p>Leadership Applications</p>
+            </div>
+            <div class="inputs">
+                <form method="get" id="form">
+                    <label for="twitter">Twitter*</label>
+                    <input type="text" name="twitter" class="input">
+
+                    <label for="hobbies">Hobbies</label>
+                    <input type="text" name="hobbies" class="input">
+
+                    <label for="details">Additional Detail's</label>
+                    <input type="text" name="details" class="input">
+
+                    <label for="experience">Leadership Experience</label>
+                    <textarea name="experience" class="input" cols="30" rows="10"></textarea>
+
+                    <div class="fill-out" id="fill-out"></div>
+                    <p class="button-submit" id="btn-submit">Submit</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./src/js/index.js"></script>
+    <script type="module" src="./src/js/connect.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
+</body>
+</html>
